@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TengoSintomas"
+    android:background="#676771">
+
+    <TextView
+        android:id="@+id/preguntaUno"
+        android:layout_width="332dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="¿Has estado en contacto cercano, sin usar elementos de protección, por más de 15 minutos con una persona con diagnóstico confirmado de COVID-19?."
+        android:textIsSelectable="false"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleCovid"
+        android:backgroundTint="#3E9EF5"/>
+
+    <TextView
+        android:id="@+id/titleCovid"
+        android:layout_width="336dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:autoText="true"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#515050"
+        android:text="Formulario reporte de sintomas Covid 19"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#3E9EF5"/>
+
+    <TextView
+        android:id="@+id/pruguntaDos"
+        android:layout_width="337dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="¿Has presentado alguno de estos síntomas recientemente (en los últimos 14 días)?"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/Fiebre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        android:backgroundTint="#3E9EF5"/>
+
+    <RadioButton
+        android:id="@+id/Garganta"
+        android:layout_width="171dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="8dp"
+        android:text="Dolor de garganta "
+        app:layout_constraintBottom_toTopOf="@+id/Nariz"
+        app:layout_constraintEnd_toStartOf="@+id/Sabor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Respirar"
+        android:backgroundTint="#3E9EF5"/>
+
+    <RadioButton
+        android:id="@+id/Respirar"
+        android:layout_width="168dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Dificultad para respirar "
+        app:layout_constraintEnd_toStartOf="@+id/Fatiga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fiebre"
+        android:backgroundTint="#3E9EF5"/>
+
+    <RadioButton
+        android:id="@+id/Sabor"
+        android:layout_width="159dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="76dp"
+        android:text="Disminución del sentido del gusto "
+        app:layout_constraintBottom_toTopOf="@+id/Enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Garganta"
+        app:layout_constraintTop_toBottomOf="@+id/Fatiga"
+        android:backgroundTint="#3E9EF5"/>
+
+    <RadioButton
+        android:id="@+id/Fatiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Fatiga o decaimiento "
+        app:layout_constraintBottom_toTopOf="@+id/Sabor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Respirar"
+        app:layout_constraintTop_toBottomOf="@+id/Tos"
+        android:backgroundTint="#3E9EF5"/>
+
+    <RadioButton
+        android:id="@+id/Fiebre"
+        android:layout_width="169dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="8dp"
+        android:text="Fiebre de 38°C o más"
+        app:layout_constraintBottom_toTopOf="@+id/Respirar"
+        app:layout_constraintEnd_toStartOf="@+id/Tos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pruguntaDos"
+        android:backgroundTint="#3E9EF5"/>
+
+    <RadioButton
+        android:id="@+id/Tos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:layout_marginBottom="8dp"
+        android:text="Tos"
+        app:layout_constraintBottom_toTopOf="@+id/Fatiga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Fiebre"
+        app:layout_constraintTop_toBottomOf="@+id/pruguntaDos"
+        android:backgroundTint="#3E9EF5"/>
+
+    <RadioButton
+        android:id="@+id/Nariz"
+        android:layout_width="177dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginRight="188dp"
+        android:layout_marginBottom="83dp"
+        android:text="Disminución del sentido del olfato "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Garganta"
+        android:backgroundTint="#3E9EF5"/>
+
+    <Button
+        android:id="@+id/Enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="269dp"
+        android:layout_marginLeft="269dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="34dp"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#3E9EF5"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="315dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preguntaUno"
+        android:backgroundTint="#3E9EF5">
+
+        <RadioButton
+            android:id="@+id/Res_01_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sí" />
+
+        <RadioButton
+            android:id="@+id/Res_01_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
